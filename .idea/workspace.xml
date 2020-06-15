@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5419c5fb-57c4-4a3a-aafe-bb34a1fdb967" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/webhooks/webhooklistner.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/webhooks/webhooklistner.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +39,10 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
@@ -59,8 +60,16 @@
       <option name="presentableId" value="Default" />
       <updated>1592215671994</updated>
       <workItem from="1592215675052" duration="835000" />
-      <workItem from="1592218485379" duration="1584000" />
+      <workItem from="1592218485379" duration="2663000" />
     </task>
+    <task id="LOCAL-00001" summary="f">
+      <created>1592222070841</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592222070841</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -68,12 +77,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="f" />
+    <option name="LAST_COMMIT_MESSAGE" value="f" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1660" y="160" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592215823278">
+    <state x="1660" y="160" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592222630155">
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>
-    <state x="1660" y="160" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1592215823278" />
+    <state x="1660" y="160" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1592222630155" />
+    <state x="1831" y="100" key="CommitChangelistDialog2" timestamp="1592222068114">
+      <screen x="1366" y="0" width="1680" height="1010" />
+    </state>
+    <state x="1831" y="100" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1592222068114" />
+    <state x="1798" y="238" key="Vcs.Push.Dialog.v2" timestamp="1592222077824">
+      <screen x="1366" y="0" width="1680" height="1010" />
+    </state>
+    <state x="1798" y="238" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1680.1010@1366.0.1680.1010" timestamp="1592222077824" />
     <state x="1901" y="329" key="com.intellij.ide.util.TipDialog" timestamp="1592218486504">
       <screen x="1366" y="0" width="1680" height="1010" />
     </state>

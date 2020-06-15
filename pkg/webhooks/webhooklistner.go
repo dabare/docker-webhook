@@ -1,10 +1,12 @@
 package webhooks
+
 import (
-	"encoding/json"
 	"github.com/gin-gonic/gin"
+	"io/ioutil"
 	"log"
 	"net/http"
 )
+
 type PushData struct {
 	Pushed_at int      `json:"pushed_at"`
 	images    []string `json:"images"`
@@ -32,21 +34,19 @@ type DockerWebHook struct {
 	CallbackUrl string     `json:"callback_url"`
 	Repository  Repository `json:"repository"`
 }
-func setupRouter() *gin.Engine {
+
+func SetupRouter() *gin.Engine {
 	r := gin.Default()
-	r.GET("/ping", func(c *gin.Context) {
-		c.String(http.StatusOK, "pong")
+	r.GET("/web-hook", func(c *gin.Context) {
+		c.String(http.StatusOK, "ok")
 	})
-	r.POST("/emido-web-hook", func(c *gin.Context) {
-		var dockerWebHook DockerWebHook
-		c.ShouldBindJSON(&dockerWebHook)
-		b, err := json.Marshal(dockerWebHook)
-		if err != nil {
-			log.Println(err)
-			return
-		}
-		log.Println(string(b))
-		c.JSON(http.StatusOK, "foo")
+	r.POST("/web-hook", func(c *gin.Context) {
+
+		body := c.Request.Body
+		x, _ := ioutil.ReadAll(body)
+
+		log.Println(string(x))
+		c.String(http.StatusOK, "ok")
 	})
 	return r
 }
